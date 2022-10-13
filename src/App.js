@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navigate as Router, Route } from 'react-router-dom';
+import { Redirect as Router, Route } from 'react-router-dom';
 import { Container } from 'semantic-ui-react';
 
 import 'semantic-ui-css/semantic.min.css';

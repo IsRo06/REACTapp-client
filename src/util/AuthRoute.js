@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { Route, Navigate } from 'react-router-dom';
+import { Route, Redirect } from 'react-router-dom';
 
 import { AuthContext } from '../context/auth';
 
@@ -10,7 +10,7 @@ function AuthRoute({ component: Component, ...rest }) {
     <Route
       {...rest}
       render={(props) =>
-        user ? <Navigate to="/" /> : <Component {...props} />
+        user ? <Redirect to="/" /> : <Component {...props} />
       }
     />
   );
